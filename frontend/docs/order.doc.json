@@ -1,0 +1,16 @@
+{
+    "name": "Order",
+    "description": "Represents an order placed by a user, including the items purchased, total amount, and a unique pickup code for order retrieval.",
+    "type": "object",
+    "id": "string",
+    "userId": "string",
+    "items": [
+        {
+            "productId": "string",
+            "quantity": "number"
+        }
+    ],
+    "total": "number",
+    "pickupCode": "string",
+    "createdAt": "string"
+}
