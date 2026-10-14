@@ -17,9 +17,6 @@ npm install
 npm run seed           # popula produtos
 npm run dev            # ou npm start - sobe em http://localhost:3000
 ```
-Rotas: GET /api/health, POST /api/auth/register, POST /api/auth/login, GET /api/products, POST /api/orders, POST /api/chat, GET /api/chat/history.
-Chat IA (Llama 3.3 via Groq, sem RAG vetorial/sem WebSocket): busca produtos + pedidos do usuario no MongoDB, monta Long Context + historico (6 msgs) e o Llama gera a resposta. Sem GROQ_API_KEY funciona em modo fallback.
-
 ## Frontend
 ```bash
 cd frontend
