@@ -27,9 +27,3 @@ cp .env.example .env   # ajuste EXPO_PUBLIC_API_URL_* se usar device fisico
 npm install
 npm start
 ```
-O chat consome apenas REST (POST /api/chat) - sem socket.io.
-
-## Migracao realizada
-- Removido WebSocket (server/src/websocket.js e frontend/src/services/socket.js, socket.io deps)
-- Pastas separadas backend/ e frontend/ (antes tudo em pet_shop/pet_shop)
-- IA continua com contexto real do banco via Mongoose (chatService)
