@@ -1,13 +1,8 @@
-﻿const express = require('express');
-const controladorAutenticacao = require('../controllers/authController');
-const controladorRosto = require('../controllers/faceController');
-const autenticacao = require('../middleware/auth');
-const exigirAutenticacao = autenticacao.exigirAutenticacao;
-const router = express.Router();
-router.post('/registrar', controladorAutenticacao.registrar);
-router.post('/register', controladorAutenticacao.registrar);
-router.post('/login', controladorAutenticacao.entrar);
-router.post('/face-register', exigirAutenticacao, controladorRosto.cadastrarRosto);
-router.post('/face-login', controladorRosto.entrarComRosto);
-router.get('/face-status', exigirAutenticacao, controladorRosto.statusRosto);
-module.exports = router;
+const express = require('express')
+const controllerAutenticacao = require('../controllers/authController')
+const router = express.Router()
+
+router.post('/registrar',controllerAutenticacao.registrar)
+router.post('/login',controllerAutenticacao.entrar)
+
+module.exports = router

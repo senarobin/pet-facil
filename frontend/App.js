@@ -1,10 +1,10 @@
 import React from 'react';
 import { StatusBar } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { ProvedorAutenticacao } from './src/contexto/autenticacao';
-import { ProvedorCarrinho } from './src/contexto/contextoCarrinho';
-import { NavegadorApp } from './src/rotas/index';
-import { LimiteErro } from './src/componentes/limiteErro';
+import { ProvedorAutenticacao } from './src/contexts/autenticacao';
+import { ProvedorCarrinho } from './src/contexts/contextoCarrinho';
+import { NavegadorApp } from './src/routes/index';
+import { LimiteErro } from './src/components/limiteErro';
 
 export default function App() {
   return (

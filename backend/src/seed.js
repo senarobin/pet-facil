@@ -1,7 +1,7 @@
 const path = require('path');
 require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 const mongoose = require('mongoose');
-const Product = require('./models/Product');
+const Produto = require('./models/Produto');
 
 const products = [
   {
@@ -52,7 +52,7 @@ const products = [
 ];
 
 mongoose.connect(process.env.MONGODB_URI)
-  .then(() => Product.bulkWrite(products.map((product) => ({
+  .then(() => Produto.bulkWrite(products.map((product) => ({
     updateOne: { filter: { id: product.id }, update: { $set: product }, upsert: true },
   }))))
   .then(() => console.log(`${products.length} produtos sincronizados.`))
