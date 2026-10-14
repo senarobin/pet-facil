@@ -12,7 +12,7 @@ pet_shop/
 ## Backend
 ```bash
 cd backend
-cp .env.example .env   # ajuste MONGODB_URI e JWT_SECRET
+.env   # ajuste MONGODB_URI e JWT_SECRET
 npm install
 npm run seed           # popula produtos
 npm run dev            # ou npm start - sobe em http://localhost:3000
@@ -20,7 +20,7 @@ npm run dev            # ou npm start - sobe em http://localhost:3000
 ## Frontend
 ```bash
 cd frontend
-cp .env.example .env   # ajuste EXPO_PUBLIC_API_URL_* se usar device fisico
+.env   # ajuste EXPO_PUBLIC_API_URL_* se usar device fisico
 npm install
 npm start
 ```
